@@ -11,7 +11,8 @@ const Products = () => {
           {products.map((product) => (
             <div key={product.id} className="product-card bg-card rounded-lg overflow-hidden">
               {product.image ? (
-            <div className="w-full h-64 bg-gray-900 overflow-hidden">
+            <div className="product-card bg-card rounded-lg overflow-hidden max-w-[300px] max-h-[400px] w-full h-full mx-auto">
+
             <img 
               src={product.image} 
               alt={product.title} 
