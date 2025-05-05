@@ -20,7 +20,7 @@ export const products: Product[] = [
     description: 'Nossa solução básica de automação para apostas online. Funciona com os principais cassinos de Angola e Portugal. Ideal para iniciantes que desejam experimentar a automação de apostas.',
     casino: 'Múltiplos Cassinos',
     imagePlaceholder: 'bg-gray-700',
-    image: '/assets/b1.png'
+    image: 'https://media.discordapp.net/attachments/1368760752961486949/1368760777653358703/b1.png?ex=6819654f&is=681813cf&hm=6c90030c7b6adc99891adff34c9e5b12fcb49212415ba71edea275b90b2a9c7c&=&format=webp&quality=lossless&width=603&height=802'
   },
   {
     id: 2,
