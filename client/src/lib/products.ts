@@ -19,6 +19,7 @@ export const products: Product[] = [
     shortDescription: 'Bot básico para automação de apostas',
     description: 'Nossa solução básica de automação para apostas online. Funciona com os principais cassinos de Angola e Portugal. Ideal para iniciantes que desejam experimentar a automação de apostas.',
     casino: 'Múltiplos Cassinos',
+    imagePlaceholder: 'bg-gray-700',
     image: '../../../attached_assets/b1.png'
   },
   {
