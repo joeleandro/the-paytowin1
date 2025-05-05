@@ -43,7 +43,7 @@ const Header = () => {
               href="/sobre" 
               className={`nav-link text-white hover:text-primary ${isActive('/sobre') ? 'active' : ''}`}
             >
-              Sobre nos
+              Sobre nós
             </Link>
           </nav>
           
@@ -88,7 +88,7 @@ const Header = () => {
             href="/sobre" 
             className="text-white py-2"
           >
-            Sobre nos
+            Sobre nós
           </Link>
           <Link 
             href="/contatos" 
