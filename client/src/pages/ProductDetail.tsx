@@ -10,7 +10,7 @@ const ProductDetail = () => {
   // Function to handle buy button click with specific product
   const handleBuyClick = () => {
     if (product) {
-      window.location.href = `https://wa.me/351936880192?text=Olá! Tenho interesse no produto: ${product.title}`;
+      window.location.href = `https://wa.me/351936880192?text=Olá! Tenho interesse no produto: ${product.title} do casino ${product.casino}`;
     }
   };
 
