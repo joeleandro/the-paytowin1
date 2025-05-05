@@ -11,13 +11,13 @@ const Products = () => {
           {products.map((product) => (
             <div key={product.id} className="product-card bg-card rounded-lg overflow-hidden">
               {product.image ? (
-                <div className="aspect-video bg-gray-900 flex items-center justify-center overflow-hidden">
-                  <img 
-                    src={product.image} 
-                    alt={product.title} 
-                    className="w-full h-full object-cover"
-                  />
-                </div>
+            <div className="w-full h-64 bg-gray-900 overflow-hidden">
+            <img 
+              src={product.image} 
+              alt={product.title} 
+              className="w-full h-full object-cover"
+            />
+          </div>
               ) : (
                 <div className={`aspect-video ${product.imagePlaceholder || 'bg-gray-800'}`}></div>
               )}
