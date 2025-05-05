@@ -4,7 +4,7 @@ import GridBackground from '@/components/GridBackground';
 const Home = () => {
   // Function to handle buy button click
   const handleBuyClick = () => {
-    window.location.href = "https://wa.me/?text=Olá! Tenho interesse no CassinoBot!";
+    window.location.href = "https://wa.me/351936880192?text=Olá! Tenho interesse nos bots!";
   };
 
   return (
