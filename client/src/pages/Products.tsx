@@ -10,7 +10,17 @@ const Products = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {products.map((product) => (
             <div key={product.id} className="product-card bg-card rounded-lg overflow-hidden">
-              <div className={`aspect-video ${product.imagePlaceholder || 'bg-gray-800'}`}></div>
+              {product.image ? (
+                <div className="aspect-video bg-gray-900 flex items-center justify-center overflow-hidden">
+                  <img 
+                    src={product.image} 
+                    alt={product.title} 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              ) : (
+                <div className={`aspect-video ${product.imagePlaceholder || 'bg-gray-800'}`}></div>
+              )}
               <div className="p-5">
                 <h3 className="text-primary text-lg font-semibold">{product.title}</h3>
                 <p className="text-sm text-gray-400">{product.price}</p>

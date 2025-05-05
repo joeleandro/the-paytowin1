@@ -8,9 +8,9 @@ const Home = () => {
   };
 
   return (
-    <GridBackground className="min-h-screen flex items-center">
-      <div className="container mx-auto px-4 py-16 md:py-24">
-        <div className="max-w-3xl mx-auto text-center">
+    <GridBackground className="min-h-screen flex items-center justify-center">
+      <div className="container mx-auto px-4 flex items-center justify-center h-full min-h-[80vh]">
+        <div className="max-w-3xl mx-auto text-center py-0 my-0">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
             O Futuro das Apostas automatizadas com IA
           </h1>

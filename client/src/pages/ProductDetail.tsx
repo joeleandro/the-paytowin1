@@ -4,7 +4,7 @@ import { getProductById } from '@/lib/products';
 
 const ProductDetail = () => {
   const { id } = useParams();
-  const productId = parseInt(id);
+  const productId = parseInt(id || '0');
   const product = getProductById(productId);
 
   // Function to handle buy button click with specific product
@@ -35,7 +35,17 @@ const ProductDetail = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row gap-12">
           <div className="md:w-1/2">
-            <div className={`aspect-square ${product.imagePlaceholder || 'bg-card'} rounded-lg`}></div>
+            {product.image ? (
+              <div className="aspect-square bg-gray-900 rounded-lg flex items-center justify-center overflow-hidden">
+                <img 
+                  src={product.image} 
+                  alt={product.title} 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            ) : (
+              <div className={`aspect-square ${product.imagePlaceholder || 'bg-card'} rounded-lg`}></div>
+            )}
           </div>
           <div className="md:w-1/2">
             <h2 className="text-3xl font-bold text-primary mb-2">{product.title}</h2>

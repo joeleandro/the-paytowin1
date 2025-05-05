@@ -6,6 +6,7 @@ export interface Product {
   description: string;
   casino: string;
   imagePlaceholder?: string; // Color for placeholder
+  image?: string; // P
 }
 
 // Product database - these are all the products in our system
@@ -18,7 +19,7 @@ export const products: Product[] = [
     shortDescription: 'Bot básico para automação de apostas',
     description: 'Nossa solução básica de automação para apostas online. Funciona com os principais cassinos de Angola e Portugal. Ideal para iniciantes que desejam experimentar a automação de apostas.',
     casino: 'Múltiplos Cassinos',
-    imagePlaceholder: '../../../bot-images/b1.png'
+    image: '@assets/b1.png'
   },
   {
     id: 2,
